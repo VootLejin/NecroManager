@@ -12,24 +12,31 @@
  * 
  */
 $(document).ready(function(){
+	var d = document.createElement('div');
+	/****Build Side Bar ****/
+	$(d).addClass("sidebar");
+	//Add to UI
+	$(d).appendTo($("#ui"));
+	
 	/****Build Screen selector menu****/
 	var d = document.createElement('div');
 	$(d).addClass("menu")
 	//Add other info as needed
 	//.
-	
+	.text("Menu");
+	//append to sidebar
 	//Add to UI
-	$(d).appendTo($("#ui"));
+	$(d).appendTo($(".sidebar"));
 	
 	/****Build Log element****/
 	d = document.createElement('div');
 	$(d).addClass("log")
 	//Add other info as needed
 	//.
+	.text("Log");
 	
-	
-	//Add to UI
-	$(d).appendTo($("#ui"));
+	//Add to Sidebar
+	$(d).appendTo($(".sidebar"));
 	
 	
 	/****Build Funtion element****/
@@ -37,16 +44,16 @@ $(document).ready(function(){
 	$(d).addClass("functions")
 	//Add other info as needed
 	//.
-	
-	//Add to UI
-	$(d).appendTo($("#ui"));
+	.text("functions");
+	//Add to Sidebar
+	$(d).appendTo($(".sidebar"));
 	
 	/****Build screen element****/
 	d = document.createElement('div');
 	$(d).addClass("screen")
 	//Add other info as needed
 	//.
-	
+	.text("screen");
 	
 	//Add to UI
 	$(d).appendTo($("#ui"));
