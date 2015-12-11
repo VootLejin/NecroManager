@@ -7,7 +7,7 @@ CSS Necro Manager
 	top: 0;
 	left: 0;
 	float: left;
-	width: 25%;
+	width: 250px;
 	height: 100%;
 /* 	border-top: 2px solid black; */
 /* 	border-bottom: 2px solid black; */
@@ -34,11 +34,12 @@ CSS Necro Manager
 
 }
 .screen{
-/* 	position: right; */
+/* 	position: absolute; */
 	height: 100%;
-	width: 75%;
+	right: 0;
+	left: 250px;
 /* 	border: 2px solid black; */
-	float: right;
+/* 	float: right; */
 /* 	clear: left; */
 	background-color: rgb(100%,0%,100%);
 }
